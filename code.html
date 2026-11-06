@@ -1,0 +1,578 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_standard" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400&amp;family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+  darkMode: "class",
+  theme: {
+    extend: {
+      "colors": {
+        "secondary-fixed": "#dbe6d0",
+        "on-tertiary-fixed": "#351000",
+        "tertiary": "#000000",
+        "primary-container": "#1c1c1b",
+        "outline": "#767872",
+        "inverse-surface": "#32302a",
+        "secondary": "#576150",
+        "on-secondary-fixed": "#151e11",
+        "on-tertiary": "#ffffff",
+        "surface-dim": "#ded9d1",
+        "on-tertiary-fixed-variant": "#6a3a22",
+        "on-primary-fixed-variant": "#474745",
+        "surface-bright": "#fef9f0",
+        "tertiary-fixed": "#ffdbcc",
+        "surface-tint": "#5f5e5d",
+        "on-tertiary-container": "#b17659",
+        "on-secondary-container": "#5b6654",
+        "primary-fixed": "#e5e2e0",
+        "primary-fixed-dim": "#c8c6c4",
+        "error-container": "#ffdad6",
+        "on-background": "#1d1c16",
+        "on-secondary-fixed-variant": "#404a3a",
+        "surface-variant": "#e7e2d9",
+        "surface": "#fef9f0",
+        "on-surface": "#1d1c16",
+        "inverse-primary": "#c8c6c4",
+        "inverse-on-surface": "#f5f0e7",
+        "surface-container-lowest": "#ffffff",
+        "on-secondary": "#ffffff",
+        "surface-container": "#f2ede4",
+        "outline-variant": "#c6c7c0",
+        "on-primary": "#ffffff",
+        "on-surface-variant": "#464742",
+        "on-error-container": "#93000a",
+        "surface-container-high": "#ece8df",
+        "tertiary-fixed-dim": "#fcb796",
+        "tertiary-container": "#351000",
+        "error": "#ba1a1a",
+        "surface-container-low": "#f8f3ea",
+        "on-error": "#ffffff",
+        "secondary-fixed-dim": "#bfcab5",
+        "background": "#fef9f0",
+        "surface-container-highest": "#e7e2d9",
+        "primary": "#000000",
+        "on-primary-container": "#858382",
+        "on-primary-fixed": "#1c1c1b",
+        "secondary-container": "#d8e3ce"
+      },
+      "borderRadius": {
+        "DEFAULT": "0.25rem",
+        "lg": "0.5rem",
+        "xl": "0.75rem",
+        "full": "9999px"
+      },
+      "spacing": {
+        "space-xl": "3rem",
+        "gutter": "1.5rem",
+        "space-md": "1rem",
+        "space-xs": "0.25rem",
+        "space-lg": "1.75rem",
+        "margin-tablet": "2rem",
+        "gutter-mobile": "1rem",
+        "margin": "4rem",
+        "margin-mobile": "1.25rem",
+        "space-sm": "0.5rem"
+      },
+      "fontFamily": {
+        "label-caps": ["Manrope"],
+        "body-editorial": ["EB Garamond"],
+        "display-hero-mobile": ["EB Garamond"],
+        "headline-md": ["EB Garamond"],
+        "display-hero": ["EB Garamond"],
+        "headline-lg": ["EB Garamond"],
+        "body-lg": ["Manrope"],
+        "body-sm": ["Manrope"],
+        "label-ui": ["Manrope"],
+        "headline-sm": ["EB Garamond"],
+        "body-md": ["Manrope"],
+        "headline-lg-mobile": ["EB Garamond"]
+      },
+      "fontSize": {
+        "label-caps": ["11px", {"lineHeight": "16px", "letterSpacing": "0.12em", "fontWeight": "600"}],
+        "body-editorial": ["20px", {"lineHeight": "32px", "letterSpacing": "0em", "fontWeight": "400"}],
+        "display-hero-mobile": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "400"}],
+        "headline-md": ["30px", {"lineHeight": "38px", "letterSpacing": "-0.01em", "fontWeight": "400"}],
+        "display-hero": ["64px", {"lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "400"}],
+        "headline-lg": ["44px", {"lineHeight": "52px", "letterSpacing": "-0.015em", "fontWeight": "400"}],
+        "body-lg": ["17px", {"lineHeight": "28px", "letterSpacing": "-0.005em", "fontWeight": "400"}],
+        "body-sm": ["13px", {"lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "400"}],
+        "label-ui": ["14px", {"lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "500"}],
+        "headline-sm": ["22px", {"lineHeight": "30px", "letterSpacing": "0em", "fontWeight": "500"}],
+        "body-md": ["15px", {"lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "400"}],
+        "headline-lg-mobile": ["32px", {"lineHeight": "38px", "letterSpacing": "0em", "fontWeight": "400"}]
+      }
+    }
+  }
+}</script></head><body class="bg-surface font-body-md text-on-surface antialiased selection:bg-surface-variant"><style id="arxemil-typography">body, .font-body-md, .font-body-lg, .font-body-sm, .font-body-editorial, .font-label-caps, .font-label-ui, nav a, button, p, span:not(.font-headline-lg):not(.font-headline-md):not(.font-headline-sm):not(.font-display-hero) { font-family: 'Lato', sans-serif !important; } h1, h2, h3, h4, h5, h6, .font-display-hero, .font-headline-lg, .font-headline-md, .font-headline-sm, header a[data-path='inicio'] span, [data-path='inicio'] { font-family: 'Montserrat', sans-serif !important; letter-spacing: -0.01em; }</style><header class="fixed top-0 left-0 right-0 z-50 bg-surface/90 backdrop-blur-md border-b border-on-surface/10"><div class="h-20 w-full max-w-7xl mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin flex items-center justify-between"><a class="flex items-center tracking-[0.2em] font-headline-md text-headline-md text-on-surface hover:text-on-surface-variant transition-colors" data-path="inicio" href="#"><span class="font-normal">ARXEMIL</span></a><nav class="hidden lg:flex items-center gap-space-lg" data-active-classes="text-on-surface border-b border-on-surface pb-1"><a aria-current="page" class="font-label-caps transition-colors uppercase text-on-surface border-b border-on-surface pb-1" data-path="inicio" href="#">Inicio</a><a class="font-label-caps text-label-caps text-on-surface-variant hover:text-on-surface transition-colors uppercase" data-path="nosotros" href="#">Nosotros</a><a class="font-label-caps text-label-caps text-on-surface-variant hover:text-on-surface transition-colors uppercase" data-path="carta" href="#">Carta</a><a class="font-label-caps text-label-caps text-on-surface-variant hover:text-on-surface transition-colors uppercase" data-path="experiencia" href="#">Experiencia</a><a class="font-label-caps text-label-caps text-on-surface-variant hover:text-on-surface transition-colors uppercase" data-path="ubicacion" href="#">Ubicación</a><a class="font-label-caps text-label-caps text-on-surface-variant hover:text-on-surface transition-colors uppercase" data-path="reservar" href="#">Reservar</a></nav><div class="flex items-center gap-space-md"><a class="inline-flex items-center justify-center bg-primary text-on-primary font-label-caps text-label-caps px-space-md py-space-sm hover:bg-secondary transition-colors duration-200 uppercase tracking-widest" href="tel:667677677">RESERVAR MESA</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-surface"><div class="flex flex-col w-full">
+<!-- Schema.org JSON-LD Structured Data -->
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "ARXEMIL",
+    "description": "Restaurante gastronómico contemporáneo en el centro de Lugo. Cocina basada en producto gallego y respeto culinario.",
+    "telephone": "667 677 677",
+    "priceRange": "30 € - 40 €",
+    "servesCuisine": "Gallega contemporánea, Cocina de mercado",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Lugo",
+      "addressRegion": "Galicia",
+      "postalCode": "27001",
+      "addressCountry": "ES"
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+        "opens": "12:00",
+        "closes": "17:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+        "opens": "19:30",
+        "closes": "23:30"
+      }
+    ]
+  }
+  </script>
+<!-- SECCIÓN 1: HERO EDITORIAL -->
+<section class="relative w-full overflow-hidden bg-surface py-12 lg:py-20">
+<div class="max-w-7xl mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin">
+<!-- Metadatos superiores discretos -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-8 mb-8 border-b border-on-surface/10">
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-[0.2em] flex items-center gap-2">
+<span class="inline-block w-1.5 h-1.5 rounded-full bg-secondary"></span>
+          Centro Histórico de Lugo • Galicia
+        </span>
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-[0.15em]">
+          Martes a Domingo • 12:00–17:00 / 19:30–23:30
+        </span>
+</div>
+<!-- Composición Asimétrica Hero -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-end">
+<!-- Columna de texto principal -->
+<div class="lg:col-span-7 flex flex-col justify-between space-y-8">
+<div class="space-y-4">
+<span class="font-label-caps text-label-caps uppercase text-on-tertiary-container tracking-[0.25em] block">
+              Gastronomía de autor
+            </span>
+<h1 class="font-display-hero text-display-hero-mobile md:text-display-hero text-on-surface leading-[1.08] tracking-tight">
+              Una mesa.<br>
+              Un producto.<br>
+<span class="italic font-normal text-secondary">Una experiencia.</span>
+</h1>
+</div>
+<p class="font-body-editorial text-body-editorial text-on-surface-variant max-w-xl">
+            Restaurante gastronómico contemporáneo en el corazón de Lugo. Respeto absoluto por el producto de lonja y tierra, en una atmósfera serena e inolvidable.
+          </p>
+<div class="pt-2 flex flex-col sm:flex-row items-start sm:items-center gap-6">
+<a class="inline-flex items-center justify-center bg-primary text-on-primary font-label-caps text-label-caps px-8 py-4 uppercase tracking-[0.2em] hover:bg-secondary transition-colors duration-200 shadow-sm" href="tel:667677677">
+              RESERVAR MESA
+            </a>
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant tracking-wider">Reservas directas</span>
+<a class="font-headline-sm text-headline-sm text-on-surface hover:text-secondary transition-colors" href="tel:667677677">
+                667 677 677
+              </a>
+</div>
+</div>
+</div>
+<!-- Columna visual asimétrica -->
+<div class="lg:col-span-5 relative mt-6 lg:mt-0">
+<div class="relative w-full aspect-[4/5] bg-surface-container overflow-hidden shadow-md">
+<img alt="Pulpo braseado sobre patata cremosa y copa de vino tinto en ARXEMIL Lugo" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-upZ0qaluca32IP0pw9NiCvKFHn_k9DDsE8O8_r-DbvVMjCVCBxil7MJvVpRuubYEc5e7tXSqeVgFTiLfGVaJFlmtylmlYVLsDj33M956AlBOS7jSuD3oCmQhxOPQUgY4cw42-vfewbo5GZxvnzCUl4Dj9YyT6-CJr9d2dngLfx4hCvo61yECwLPDYTdSQLIS7-v3iuEL7RlwmRbu6nPCJczZSmMyAoaLTQ5d9AokoDYgVDMFeZR1CnDMweHjOwxRIQ">
+</div>
+<!-- Inset arquitectónico flotante -->
+<div class="absolute -bottom-6 -left-6 hidden sm:block w-44 aspect-square bg-surface p-2 shadow-lg">
+<img alt="Fachada exterior de madera y ventanales de ARXEMIL en Lugo" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDy3KmDkHBoJjlcRegeayXpRB9w45HMNmH2rd70_tSqNxqibHSPSp1UxGqJXdL7rUCh7ekObmMP3MMVTMNY4KHu5n2lpts9DApU1eqWGa4olUMRQAjPRVdIMPPU-X1b-1P2VnpTFP9WB5asOY4EiRbRnAoX6NyCk15iuMR_x_7q6Z3HU6DrglPjQCVSE6Xvfp2XDAUxSn7IFC8mCCiKN4tX6KDEpBmI8u9pIdpyWSibMP_bifRuCpKPPqGmuVTs6IMg3g">
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECCIÓN 2: INTRODUCCIÓN EDITORIAL & ESPACIO NEGATIVO -->
+<section class="w-full bg-surface-container-low py-20 lg:py-28">
+<div class="max-w-4xl mx-auto px-margin-mobile md:px-margin-tablet text-center space-y-6">
+<span class="font-label-caps text-label-caps text-on-tertiary-container uppercase tracking-[0.25em]">
+        Declaración de intenciones
+      </span>
+<p class="font-headline-md text-headline-md md:text-headline-lg text-on-surface leading-snug">
+        “ARXEMIL es un restaurante creado desde una idea sencilla: hacer las cosas bien, cuidar el producto y convertir cada mesa en una experiencia.”
+      </p>
+<div class="w-16 h-px bg-on-surface/20 mx-auto mt-6"></div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-lg mx-auto">
+        Sin artificios ni excesos. Únicamente la búsqueda constante de la frescura gallega, la técnica al servicio del sabor y la calidez en el trato.
+      </p>
+</div>
+</section>
+<!-- SECCIÓN 3: HISTORIA (DESDE 2015) -->
+<section class="w-full bg-surface py-20 lg:py-28">
+<div class="max-w-7xl mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+<!-- Imagen cenital de la sala -->
+<div class="lg:col-span-7 order-2 lg:order-1">
+<div class="relative w-full aspect-[16/10] bg-surface-container overflow-hidden shadow-md">
+<img alt="Sala principal diáfana a doble altura con lámparas doradas de ARXEMIL" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCvDvi8KXZ0meKWQNNfYwQGXNMMzcWdxvOLQfCRHrjZlBXc16JKZWJWHCMTLLDOCGbNzHIgUqE6vvKwVmw8XTNxZlvPI0Ekeqjc7nkv2ADmLqcXmv3W9sZpYdr5fq1X_GM09l1AB25R22bi026PDLOAGUS2JNcCSLoOF_5LoVQUyOJOUSzLJUuF7sAV41g69gJ3InUkD2Bvl6NnJ_XyK0tU3o16FE4_1Gco2E8gV8T_sWYmokutWRZJ8W0tD2VAhenYDA">
+<div class="absolute bottom-4 left-4 bg-surface/90 backdrop-blur-sm px-4 py-2">
+<span class="font-label-caps text-label-caps uppercase text-on-surface tracking-widest">Sala principal • Gran formato</span>
+</div>
+</div>
+</div>
+<!-- Relato editorial -->
+<div class="lg:col-span-5 order-1 lg:order-2 space-y-6">
+<div class="inline-flex items-center gap-3">
+<span class="font-display-hero text-headline-lg lg:text-display-hero text-secondary font-light leading-none">2015</span>
+<div class="h-px w-12 bg-secondary"></div>
+</div>
+<h2 class="font-headline-lg text-headline-md lg:text-headline-lg text-on-surface leading-tight">
+            Dos amigos. Un sueño.<br>
+<span class="italic font-normal">Desde 2015.</span>
+</h2>
+<p class="font-body-editorial text-body-editorial text-on-surface-variant">
+            ARXEMIL nació en Lugo como la unión vocacional de dos amigos apasionados por la hostelería genuina y el sabor de nuestra tierra.
+          </p>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Desde que abrimos las puertas en 2015 en pleno centro histórico, concebimos este espacio no como un negocio pasajero, sino como una casa donde celebrar el encuentro, la sobremesa y el respeto minucioso hacia quienes cultivan, pescan y crían lo mejor de Galicia.
+          </p>
+<div class="pt-4">
+<div class="flex items-center gap-4 text-on-surface">
+<span class="material-symbols-outlined text-secondary text-2xl">verified</span>
+<span class="font-label-caps text-label-caps uppercase tracking-wider">Casi una década cocinando memoria</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECCIÓN 4: LA EXPERIENCIA ARXEMIL (TRES PILARES) -->
+<section class="w-full bg-surface-container py-20 lg:py-28">
+<div class="max-w-7xl mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin">
+<div class="max-w-2xl mb-16 space-y-3">
+<span class="font-label-caps text-label-caps uppercase text-on-tertiary-container tracking-[0.25em]">Filosofía de mesa</span>
+<h2 class="font-headline-lg text-headline-md lg:text-headline-lg text-on-surface">La Experiencia ARXEMIL</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Tres principios inmutables que guían cada jornada de mercado y cada servicio.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Pilar 1: Producto -->
+<div class="bg-surface p-8 lg:p-10 flex flex-col justify-between shadow-sm">
+<div class="space-y-4">
+<span class="font-label-caps text-label-caps text-on-tertiary-container tracking-widest block">01 / ORIGEN</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Cocina basada en producto y calidad</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Selección diaria en rula y huertos de proximidad. Cocciones milimétricas que ensalzan la nobleza pura de cada ingrediente, sin disfraces.
+            </p>
+</div>
+<div class="mt-8 pt-4 border-t border-on-surface/10 flex items-center justify-between">
+<span class="font-label-caps text-label-caps uppercase text-secondary">Materia prima</span>
+<span class="material-symbols-outlined text-secondary">eco</span>
+</div>
+</div>
+<!-- Pilar 2: Ambiente (con imagen de barra) -->
+<div class="bg-surface p-8 lg:p-10 flex flex-col justify-between shadow-sm">
+<div class="space-y-4">
+<span class="font-label-caps text-label-caps text-on-tertiary-container tracking-widest block">02 / ESPACIO</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Un espacio cuidado, agradable y sofisticado</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Arquitectura de maderas nobles, latón, doble altura y luz tamizada pensada para que el tiempo transcurra a otro compás.
+            </p>
+<div class="pt-2">
+<div class="w-full aspect-[16/9] overflow-hidden bg-surface-container">
+<img alt="Coctelería y barra elegante con botillería de latón en ARXEMIL" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBAT6dk3KC-nH3zpQR4CsipNWmgCmF8iDeJXhhmn9inilOgV43qZRnmWaUbTNlMlHsfvfAsmE9AqkufMD7cH6b4qHacNQqTiIv2R2c2c3w86BZuHr5RWH5bdKbisqX3jBo5tj3fSePDptUCMR-1XDRUe41fpSnrLk-QIbXDj1YHtG5yYVc4crtu8HbelNUf25cXNb6ramO0baRRJ5N--NrT-6433TfBVt_XFS6afG_cTAwt4KEYOwFslDUfmRuHyj44qA">
+</div>
+</div>
+</div>
+<div class="mt-6 pt-4 border-t border-on-surface/10 flex items-center justify-between">
+<span class="font-label-caps text-label-caps uppercase text-secondary">Barra &amp; Sala</span>
+<span class="material-symbols-outlined text-secondary">local_bar</span>
+</div>
+</div>
+<!-- Pilar 3: Valor -->
+<div class="bg-surface p-8 lg:p-10 flex flex-col justify-between shadow-sm">
+<div class="space-y-4">
+<span class="font-label-caps text-label-caps text-on-tertiary-container tracking-widest block">03 / HONESTIDAD</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Experiencia especial y relación honesta</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Creemos en la alta gastronomía accesible. Una velada memorable manteniendo una relación calidad-precio razonable.
+            </p>
+<div class="bg-surface-container-low p-4 mt-4">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider block">Ticket medio estimado</span>
+<span class="font-headline-md text-headline-md text-on-surface">30 – 40 €</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant block mt-1">Por persona (según maridaje)</span>
+</div>
+</div>
+<div class="mt-8 pt-4 border-t border-on-surface/10 flex items-center justify-between">
+<span class="font-label-caps text-label-caps uppercase text-secondary">Precios sinceros</span>
+<span class="material-symbols-outlined text-secondary">balance</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECCIÓN 5: CARTA CONCEPTUAL (DISEÑO EDITORIAL RIGUROSO) -->
+<section class="w-full bg-surface py-20 lg:py-28">
+<div class="max-w-5xl mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin">
+<!-- Encabezado de la Carta -->
+<div class="text-center max-w-2xl mx-auto mb-16 space-y-4">
+<span class="font-label-caps text-label-caps uppercase text-on-tertiary-container tracking-[0.25em]">La propuesta</span>
+<h2 class="font-headline-lg text-headline-md lg:text-headline-lg text-on-surface">Carta Gastronómica</h2>
+<div class="inline-block bg-surface-container-high px-4 py-2">
+<p class="font-body-sm text-body-sm text-on-surface-variant italic">
+            Carta de ejemplo. Productos y precios sujetos a disponibilidad y confirmación de mercado.
+          </p>
+</div>
+</div>
+<div class="space-y-16">
+<!-- Categoría 1: Para compartir -->
+<div class="space-y-6">
+<div class="flex items-center gap-4 pb-2 border-b border-on-surface/15">
+<h3 class="font-headline-md text-headline-md text-on-surface">Para Compartir</h3>
+<span class="font-label-caps text-label-caps text-on-tertiary-container uppercase tracking-wider">Aperturas de mesa</span>
+</div>
+<div class="divide-y divide-on-surface/5">
+<div class="py-4 flex flex-col sm:flex-row sm:items-baseline justify-between gap-2">
+<span class="font-body-lg text-body-lg text-on-surface">Pan de masa madre, mantequilla ahumada y aceite de oliva</span>
+<span class="font-label-ui text-label-ui text-on-surface font-semibold sm:text-right shrink-0">4,50 €</span>
+</div>
+<div class="py-4 flex flex-col sm:flex-row sm:items-baseline justify-between gap-2">
+<span class="font-body-lg text-body-lg text-on-surface">Croquetas cremosas de jamón ibérico</span>
+<span class="font-label-ui text-label-ui text-on-surface font-semibold sm:text-right shrink-0">10,50 €</span>
+</div>
+<div class="py-4 flex flex-col sm:flex-row sm:items-baseline justify-between gap-2">
+<span class="font-body-lg text-body-lg text-on-surface">Burrata, tomate asado, albahaca y aceite de oliva virgen extra</span>
+<span class="font-label-ui text-label-ui text-on-surface font-semibold sm:text-right shrink-0">12,50 €</span>
+</div>
+<div class="py-4 flex flex-col sm:flex-row sm:items-baseline justify-between gap-2">
+<div class="space-y-0.5">
+<span class="font-body-lg text-body-lg text-on-surface font-medium">Pulpo a la brasa, patata cremosa y pimentón</span>
+<span class="font-body-sm text-body-sm text-secondary block">Especialidad de la casa • Cocción lenta y sellado al fuego</span>
+</div>
+<span class="font-label-ui text-label-ui text-on-surface font-semibold sm:text-right shrink-0">16,50 €</span>
+</div>
+</div>
+</div>
+<!-- Categoría 2: Entrantes -->
+<div class="space-y-6">
+<div class="flex items-center gap-4 pb-2 border-b border-on-surface/15">
+<h3 class="font-headline-md text-headline-md text-on-surface">Entrantes</h3>
+<span class="font-label-caps text-label-caps text-on-tertiary-container uppercase tracking-wider">Del mar y la huerta</span>
+</div>
+<div class="divide-y divide-on-surface/5">
+<div class="py-4 flex flex-col sm:flex-row sm:items-baseline justify-between gap-2">
+<span class="font-body-lg text-body-lg text-on-surface">Vieira marcada, crema de coliflor y aceite de avellana</span>
+<span class="font-label-ui text-label-ui text-on-surface font-semibold sm:text-right shrink-0">17,50 €</span>
+</div>
+<div class="py-4 flex flex-col sm:flex-row sm:items-baseline justify-between gap-2">
+<span class="font-body-lg text-body-lg text-on-surface">Huevo a baja temperatura, patata, setas y jugo de carne</span>
+<span class="font-label-ui text-label-ui text-on-surface font-semibold sm:text-right shrink-0">15,50 €</span>
+</div>
+<div class="py-4 flex flex-col sm:flex-row sm:items-baseline justify-between gap-2">
+<span class="font-body-lg text-body-lg text-on-surface">Zamburiñas a la plancha, mantequilla cítrica y hierbas frescas</span>
+<span class="font-label-ui text-label-ui text-on-surface font-semibold sm:text-right shrink-0">16,50 €</span>
+</div>
+</div>
+</div>
+<!-- Dos columnas: Pescados y Carnes -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+<!-- Pescados -->
+<div class="space-y-6">
+<div class="flex items-center gap-4 pb-2 border-b border-on-surface/15">
+<h3 class="font-headline-md text-headline-md text-on-surface">Pescados</h3>
+<span class="font-label-caps text-label-caps text-on-tertiary-container uppercase tracking-wider">Lonja gallega</span>
+</div>
+<div class="divide-y divide-on-surface/5">
+<div class="py-4 flex flex-col sm:flex-row sm:items-baseline justify-between gap-2">
+<span class="font-body-lg text-body-lg text-on-surface">Merluza a la plancha, pilpil suave y verduras de temporada</span>
+<span class="font-label-ui text-label-ui text-on-surface font-semibold sm:text-right shrink-0">21,00 €</span>
+</div>
+<div class="py-4 flex flex-col sm:flex-row sm:items-baseline justify-between gap-2">
+<span class="font-body-lg text-body-lg text-on-surface">Lubina asada, crema de apionabo y salsa de cítricos</span>
+<span class="font-label-ui text-label-ui text-on-surface font-semibold sm:text-right shrink-0">22,50 €</span>
+</div>
+</div>
+</div>
+<!-- Carnes -->
+<div class="space-y-6">
+<div class="flex items-center gap-4 pb-2 border-b border-on-surface/15">
+<h3 class="font-headline-md text-headline-md text-on-surface">Carnes</h3>
+<span class="font-label-caps text-label-caps text-on-tertiary-container uppercase tracking-wider">Pasto y dehesa</span>
+</div>
+<div class="divide-y divide-on-surface/5">
+<div class="py-4 flex flex-col sm:flex-row sm:items-baseline justify-between gap-2">
+<span class="font-body-lg text-body-lg text-on-surface">Presa ibérica, patata asada y jugo reducido</span>
+<span class="font-label-ui text-label-ui text-on-surface font-semibold sm:text-right shrink-0">22,50 €</span>
+</div>
+<div class="py-4 flex flex-col sm:flex-row sm:items-baseline justify-between gap-2">
+<span class="font-body-lg text-body-lg text-on-surface">Solomillo de ternera, parmentier y salsa de vino tinto</span>
+<span class="font-label-ui text-label-ui text-on-surface font-semibold sm:text-right shrink-0">25,00 €</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Postres -->
+<div class="space-y-6 max-w-3xl mx-auto pt-6">
+<div class="flex items-center justify-between pb-2 border-b border-on-surface/15">
+<h3 class="font-headline-md text-headline-md text-on-surface">Postres Artesanos</h3>
+<span class="font-label-caps text-label-caps text-on-tertiary-container uppercase tracking-wider">Final dulce</span>
+</div>
+<div class="divide-y divide-on-surface/5">
+<div class="py-4 flex justify-between items-baseline">
+<span class="font-body-lg text-body-lg text-on-surface">Tarta cremosa de queso, frutos rojos</span>
+<span class="font-label-ui text-label-ui text-on-surface font-semibold">7,50 €</span>
+</div>
+<div class="py-4 flex justify-between items-baseline">
+<span class="font-body-lg text-body-lg text-on-surface">Chocolate, avellana y sal</span>
+<span class="font-label-ui text-label-ui text-on-surface font-semibold">7,50 €</span>
+</div>
+<div class="py-4 flex justify-between items-baseline">
+<span class="font-body-lg text-body-lg text-on-surface">Torrija caramelizada, helado de vainilla</span>
+<span class="font-label-ui text-label-ui text-on-surface font-semibold">7,00 €</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECCIÓN 6: SELECCIÓN ARXEMIL (PLATOS DESTACADOS ASIMÉTRICOS) -->
+<section class="w-full bg-surface-container-high py-20 lg:py-28">
+<div class="max-w-7xl mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+<div>
+<span class="font-label-caps text-label-caps uppercase text-on-tertiary-container tracking-[0.25em]">Iconos del menú</span>
+<h2 class="font-headline-lg text-headline-md lg:text-headline-lg text-on-surface">Selección ARXEMIL</h2>
+</div>
+<p class="font-body-editorial text-body-editorial text-on-surface-variant max-w-md">
+          Creaciones que sintetizan nuestra identidad culinaria: producto gallego excelso tratado con técnica sobria y armonía.
+        </p>
+</div>
+<!-- Mosaico Asimétrico -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+<!-- Plato Destacado con Foto Principal -->
+<div class="lg:col-span-7 bg-surface p-6 sm:p-10 shadow-md">
+<div class="aspect-[16/10] w-full overflow-hidden bg-surface-container mb-8">
+<img alt="Pulpo a la brasa con patata cremosa y pimentón servido con vino" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAoNlb4cg9xbKiGfIQnh0Tj5qeJ78dP_mysNlZq9CVTUUNODJSgqal-Ts0dmJx-q9Rrjnd_c4udIElsxTJmjXfpGhL7p1tw4KEncUxDbnhTbhhtt1A6SLIf8FlsJ9k9RR75PmSbGPLXOI3eZT2slyNMBMs6yFSAQOnkJh7ZuAxsipnvuTmkLWP38dWVjKzPQcHhSw0-ed64Pp4WfAypaHr5FQ6SQVckNQr4iAEnyXHu4nfZ0iCHDombFQXZX2pNDJA80w">
+</div>
+<div class="space-y-3">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-on-tertiary-container uppercase tracking-widest">Plato Emblemático</span>
+<span class="font-label-ui text-label-ui font-semibold text-on-surface">16,50 €</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface">Pulpo a la brasa con patata cremosa y pimentón</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Tacos de pulpo gallego con golpe vivo de brasa sobre parmentier sedosa de patata de la comarca y emulsión de pimentón de la Vera con toques herbáceos.
+            </p>
+</div>
+</div>
+<!-- Dos Platos Complementarios -->
+<div class="lg:col-span-5 flex flex-col gap-8">
+<!-- Vieira -->
+<div class="bg-surface p-8 shadow-sm space-y-4">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-widest">Entrante Noble</span>
+<span class="font-label-ui text-label-ui font-semibold text-on-surface">17,50 €</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Vieira marcada con crema de coliflor</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Vieira de ría dorada en mantequilla tostada, sobre terciopelo de coliflor dulce y perfume de aceite virgen de avellana.
+            </p>
+</div>
+<!-- Solomillo -->
+<div class="bg-surface p-8 shadow-sm space-y-4">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-widest">Carne Suprema</span>
+<span class="font-label-ui text-label-ui font-semibold text-on-surface">25,00 €</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Solomillo de ternera con parmentier</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Corte tierno de ternera seleccionada gallega, cocinado a punto exacto, acompañado de clásica parmentier untuosa y demi-glace al vino tinto de la Ribeira Sacra.
+            </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECCIÓN 7: INFORMACIÓN PRÁCTICA & UBICACIÓN EN LUGO -->
+<section class="w-full bg-surface py-20 lg:py-28">
+<div class="max-w-7xl mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16">
+<!-- Bloque de Información & Horarios -->
+<div class="lg:col-span-5 space-y-8">
+<div>
+<span class="font-label-caps text-label-caps uppercase text-on-tertiary-container tracking-[0.25em]">Información Práctica</span>
+<h2 class="font-headline-lg text-headline-md lg:text-headline-lg text-on-surface mt-2">ARXEMIL • Centro de Lugo</h2>
+</div>
+<div class="space-y-6">
+<div class="space-y-2">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider block">Horario de Cocina</span>
+<p class="font-body-lg text-body-lg text-on-surface font-medium">Martes a domingo</p>
+<div class="flex flex-col gap-1 text-on-surface-variant font-body-md">
+<span class="">Almuerzos: 12:00 – 17:00</span>
+<span class="">Cenas: 19:30 – 23:30</span>
+</div>
+<p class="font-body-sm text-body-sm text-secondary italic pt-1">
+                Lunes cerrado por descanso del equipo
+              </p>
+</div>
+<div class="pt-4 border-t border-on-surface/10 space-y-2">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider block">Teléfono de Atención y Reservas</span>
+<a class="font-headline-md text-headline-md text-on-surface hover:text-secondary transition-colors block" href="tel:667677677">
+                667 677 677
+              </a>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Atención en horario comercial</span>
+</div>
+<div class="pt-4 border-t border-on-surface/10 space-y-3">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider block">Localización</span>
+<p class="font-body-md text-body-md text-on-surface">
+                Ubicado en el epicentro histórico de Lugo, a pasos de la Muralla Romana y rodeado de calles peatonales de gran encanto.
+              </p>
+<div>
+<a class="inline-flex items-center gap-2 font-label-caps text-label-caps uppercase tracking-wider text-on-surface border-b-2 border-on-surface hover:border-on-tertiary-container hover:text-on-tertiary-container transition-colors py-1" href="https://www.google.com/maps/place/Centro+hist%C3%B3rico+de+Lugo,+27001+Lugo/@43.011444,-7.5629718,1104m/data=!3m2!1e3!4b1!4m6!3m5!1s0xd31ce85488b7e29a:0xb0f4757394f27eb!8m2!3d43.0116776!4d-7.5572007!16s%2Fg%2F11b7q68yfh!5m1!1e1?entry=ttu&amp;g_ep=EgoyMDI2MDkxNi4wIKXMDSoASAFQAw%3D%3D" rel="noopener noreferrer" target="_blank">
+<span class="">CÓMO LLEGAR (GOOGLE MAPS)</span>
+<span class="material-symbols-outlined text-sm">north_east</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+<!-- Marco Arquitectónico & Ubicación -->
+<div class="lg:col-span-7 flex flex-col gap-6">
+<div class="w-full aspect-[16/10] bg-surface-container overflow-hidden shadow-md relative">
+<img alt="Entrada y fachada de madera con toldo de ARXEMIL en Lugo" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA79IOj8kessRsLL1iQv3Yz87qFrnTCS0WGO_ISSH9BPn-r2GIACGzlsvh47HYkJkl232VsaaY7ECi4ss_YG9CuGh7jonV5Kwd95fgDISw0RzUWJQKJ947u14gS_INzfWuBaikMOrp9wswm0lbO99GubrFvR0mJHeu0nH8YRdJpDveUzy5t4UKPqUyX5wJo70VGyJtzkRMewtFBq4-3Fe40vWPficjHgjpQi7CCB8OXtH4GUJDUiXerTB8OcTLpVzGamQ">
+<div class="absolute inset-0 bg-gradient-to-t from-primary/60 via-transparent to-transparent"></div>
+<div class="absolute bottom-6 left-6 right-6 text-on-primary">
+<span class="font-label-caps text-label-caps uppercase tracking-[0.2em] block text-surface-variant">Lugo Ciudad</span>
+<h3 class="font-headline-sm text-headline-sm">Una parada imprescindible en el centro histórico</h3>
+</div>
+</div>
+<!-- Mapa estilizado con data-location -->
+<div class="w-full bg-surface-container-high shadow-md overflow-hidden border border-on-surface/10 relative" data-location="Centro histórico de Lugo, 27001 Lugo, Spain"><div class="w-full h-64 relative"><iframe title="Mapa interactivo ARXEMIL en Centro Histórico de Lugo" src="https://maps.google.com/maps?q=43.0116776,-7.5572007&amp;hl=es&amp;z=16&amp;output=embed" width="100%" height="100%" style="border:0; filter: contrast(95%) brightness(98%) sepia(8%);" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="w-full h-full block"></iframe></div><div class="p-4 bg-surface flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-t border-on-surface/10"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary text-lg">location_on</span><span class="font-label-caps text-label-caps uppercase text-on-surface tracking-wider">Centro Histórico • 27001 Lugo</span></div><a class="inline-flex items-center gap-2 font-label-caps text-label-caps uppercase tracking-wider text-on-surface underline underline-offset-4 hover:text-on-tertiary-container transition-colors" href="https://www.google.com/maps/place/Centro+hist%C3%B3rico+de+Lugo,+27001+Lugo/@43.011444,-7.5629718,1104m/data=!3m2!1e3!4b1!4m6!3m5!1s0xd31ce85488b7e29a:0xb0f4757394f27eb!8m2!3d43.0116776!4d-7.5572007!16s%2Fg%2F11b7q68yfh!5m1!1e1?entry=ttu&amp;g_ep=EgoyMDI2MDkxNi4wIKXMDSoASAFQAw%3D%3D" rel="noopener noreferrer" target="_blank"><span class="">Abrir en Google Maps</span><span class="material-symbols-outlined text-sm">north_east</span></a></div></div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECCIÓN 8: CONVERSIÓN & RESERVAS -->
+<section class="w-full bg-primary-container text-on-surface py-20 lg:py-28 relative">
+<div class="max-w-4xl mx-auto px-margin-mobile md:px-margin-tablet text-center space-y-8">
+<span class="font-label-caps text-label-caps uppercase text-on-tertiary-container tracking-[0.3em]">
+        Reserva Inmediata
+      </span>
+<h2 class="font-headline-lg text-headline-md md:text-headline-lg text-surface-bright leading-tight">
+        Tu mesa te espera.
+      </h2>
+<p class="font-body-editorial text-body-editorial text-surface-dim max-w-xl mx-auto">
+        Reserva directamente por teléfono y disfruta de ARXEMIL en el centro de Lugo. Agradecemos avisar con antelación para grupos o peticiones especiales.
+      </p>
+<div class="pt-4 flex flex-col sm:flex-row items-center justify-center gap-6">
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-surface-bright text-on-surface font-label-caps text-label-caps px-10 py-5 uppercase tracking-[0.2em] hover:bg-surface-variant transition-colors duration-200 shadow-md" href="tel:667677677">
+<span class="material-symbols-outlined text-lg">call</span>
+<span class="">RESERVAR MESA</span>
+</a>
+</div>
+<div class="pt-6">
+<p class="font-body-sm text-body-sm text-on-primary-container">
+          Llamada directa al <a class="underline hover:text-surface-bright font-semibold" href="tel:667677677">667 677 677</a> • De martes a domingo
+        </p>
+</div>
+</div>
+</section>
+</div></main><footer class="w-full bg-surface-container-low border-t border-on-surface/10 mt-space-xl"><div class="max-w-7xl mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin py-space-xl"><div class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-start"><div class="md:col-span-4 flex flex-col gap-space-xs"><span class="font-headline-sm text-headline-sm tracking-wider text-on-surface">ARXEMIL</span><p class="font-body-sm text-body-sm text-on-surface-variant">Alta cocina contemporánea gallega</p><p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs">Centro Histórico de Lugo, Galicia</p></div><div class="md:col-span-4 flex flex-col gap-space-xs"><span class="font-label-caps text-label-caps uppercase text-on-surface-variant">Horario</span><p class="font-body-md text-body-md text-on-surface">Martes a domingo<br><span class="font-body-sm text-body-sm text-on-surface-variant">12:00 – 17:00 / 19:30 – 23:30</span></p><p class="font-body-sm text-body-sm text-on-surface-variant italic">Lunes cerrado por descanso</p></div><div class="md:col-span-4 flex flex-col gap-space-xs md:items-end"><span class="font-label-caps text-label-caps uppercase text-on-surface-variant">Contacto &amp; Visitas</span><a class="font-headline-sm text-headline-sm text-on-surface hover:text-on-surface-variant transition-colors" href="tel:667677677">667 677 677</a><a class="font-label-caps text-label-caps uppercase tracking-wider text-on-surface underline underline-offset-4 hover:text-on-tertiary-container transition-colors mt-space-xs" href="https://maps.google.com/?q=Lugo+Espana" rel="noopener noreferrer" target="_blank">Cómo llegar</a></div></div><div class="border-t border-on-surface/10 mt-space-xl pt-space-lg flex flex-col sm:flex-row items-center justify-between gap-space-sm"><span class="font-body-sm text-body-sm text-on-surface-variant">© 2024 ARXEMIL. Centro de Lugo.</span><span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-widest">Lugo • Galicia</span></div></div></footer>
+
+</body></html>
